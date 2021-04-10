@@ -1,0 +1,66 @@
+@import "@/asset/css/common.scss";
+@import "@/asset/css/mixin.scss";
+
+.bgc {
+  width: 300px;
+  height: 300px;
+  background: url("../../asset/image/mingren.jpg") no-repeat;
+  background-size: cover;
+}
+.employs{
+  margin-top: 20px;
+  display: flex;
+  .item{
+    margin-left: 20px;
+    border: 1px solid rgb(150, 148, 148);
+    background: #fff;
+  }
+  .active{
+    background: cornflowerblue;
+  }
+}
+@include pcContent {
+  .login {
+    position: relative;
+    background: #fff;
+    border: 1px solid rgba(131, 130, 130, 0.933); /*no*/
+    text-align: center;
+    @include pcSize(padding, 15px 0);
+    @include pcSize(width, 300px);
+    @include pcSize(margin,40px auto);
+    @include pcSize(min-height, 200px);
+    @include pcSize(font-size, 16px);
+    .info {
+      font-weight: 600;
+    }
+    .btn {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      @include pcSize(bottom, 20px);
+    }
+  }
+}
+@include mobileContent {
+  .login {
+    position: relative;
+    width: 80%;
+    background: #fff;
+    border: 1px solid rgba(131, 130, 130, 0.933); /*no*/
+    text-align: center;
+    padding: 15px;
+    margin: 20px auto;
+    min-height: 400px;
+    font-size: 20px;
+    
+    .info {
+      font-weight: 600;
+    }
+    .btn {
+      position: absolute;
+      left: 50%;
+      bottom: 20px;
+      transform: translateX(-50%);
+    }
+  }
+}

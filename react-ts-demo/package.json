@@ -1,0 +1,64 @@
+{
+  "name": "react-ts-demo",
+  "version": "1.0.0",
+  "description": "一个React+TS的多页面应用框架 DEMO",
+  "main": "postcss.config.js",
+  "scripts": {
+    "dev": "cross-env TARGET=local webpack serve --mode development",
+    "build:test": "cross-env TARGET=test webpack --mode production",
+    "build:pre": "cross-env TARGET=staging webpack --mode production",
+    "build": "cross-env TARGET=production webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luoshuai990529/react-ts-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luoshuai990529/react-ts-demo/issues"
+  },
+  "homepage": "https://github.com/luoshuai990529/react-ts-demo#readme",
+  "dependencies": {
+    "antd": "^4.15.0",
+    "js-cookie": "^2.2.1",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.13",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/node": "^14.14.37",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@webpack-cli/serve": "^1.3.1",
+    "ali-oss": "^6.15.2",
+    "autoprefixer": "9.8.6",
+    "babel-loader": "^8.2.2",
+    "bundle-loader": "^0.5.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^5.2.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "4.5.0",
+    "mini-css-extract-plugin": "^1.4.0",
+    "node-env-file": "^0.1.8",
+    "postcss": "7.0.35",
+    "postcss-loader": "^4.1.0",
+    "postcss-px2rem": "^0.3.0",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "serve": "^11.3.2",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.1.0",
+    "typescript": "^4.2.3",
+    "url-loader": "^4.1.1",
+    "webpack": "5.6.0",
+    "webpack-cli": "^4.6.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}

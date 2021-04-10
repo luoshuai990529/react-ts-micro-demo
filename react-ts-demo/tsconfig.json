@@ -1,0 +1,25 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".", //用于设置解析非相对模块名称的基本目录，相对模块不会受到baseUrl的影响
+      "paths": { //用于设置模块名到基于baseUrl的路径映射
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "alwaysStrict": true, //指定始终以严格模式检查每个模块，并且在编译之后的JS文件中加入"use strict"字符串，用来告诉浏览器该JS为严格模式
+      "declaration": false, //用来指定是否在编译的时候是否生成相的d.ts声明文件，如果设为true,编译每个ts文件之后会生成一个js文件和一个声明文件，但是declaration和allowJs不能同时设为true
+      "skipLibCheck": true, //是否跳过声明文件的类型监测
+      "noEmitOnError": true, //不要截断错误消息
+      "removeComments": true, //不发送注释到输出
+      "esModuleInterop": true, //通过导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性
+      "jsx": "react", //指定jsx代码用于的开发环境:'preserve','react-native',or 'react
+      "target": "ES5", //target用于指定编译之后的版本 es5 es6...
+      "module": "ESNext", //用来指定要使用的模板标准 这里不考虑兼容，所以这里我也将其设定为最新的esnext
+      "moduleResolution": "Node", // 将模块处理方式改为用node来处理 不做模块处理方式设置的话可能会有报错
+      "resolveJsonModule": true, // 允许导入扩展名为“ .json”的模块，这是节点项目中的常见做法。这包括import基于静态JSON形状生成的类型
+      "lib": [ "es2015","dom" ] // 编译过程中需要引入的库文件的列表
+    },
+    "include": [ //指定要包含在程序中的文件名或模式的数组。这些文件名是相对于包含tsconfig.json文件的目录来解析的。
+      "src/**/*"
+    ]
+  }

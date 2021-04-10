@@ -1,0 +1,13 @@
+@mixin pcSize($prop, $val) {
+  #{$prop}: $val; /*no*/
+}
+@mixin pcContent {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+@mixin mobileContent {
+  @media (max-width: 991px) {
+    @content;
+  }
+}

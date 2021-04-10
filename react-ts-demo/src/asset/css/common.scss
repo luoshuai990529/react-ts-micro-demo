@@ -1,0 +1,22 @@
+@import 'normalize.css';
+@import '@/asset/css/mixin';
+
+html {
+  font-size: 10vw;
+}
+.page {
+  background: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.page-bg {
+  @include pcContent {
+    // min-height: 110vh;
+    background: url('@/asset/image/pc-bg.png') top center no-repeat;
+  }
+  @include mobileContent {
+    // min-height: 120vh;
+    background: url('@/asset/image/mobile-bg.png') top center no-repeat;
+    background-size: cover;
+  }
+}

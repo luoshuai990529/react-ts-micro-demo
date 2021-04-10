@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "src/*"
+      ]
+    },
+    "alwaysStrict": true,
+    "declaration": false,
+    "skipLibCheck": true,
+    "noEmitOnError": true,
+    "removeComments": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "target": "ES5",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
